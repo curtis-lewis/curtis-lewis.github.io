@@ -11,4 +11,4 @@ function rollD3() {
 	document.getElementById("D3result").innerHTML = result;
 }
 
-buttonD3.addEventListener("click", rollD3);
+D3_button.addEventListener("click", rollD3);
