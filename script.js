@@ -2,13 +2,12 @@
 
 /* Variable Declarations */
 var button = document.getElementById("button");
+var text = "sample";
 
 /* Function Declarations */
-function rollD3() {
-	var result = 3;
-
-	document.getElementById("D3result").innerHTML = result;
+function test() {
+	document.getElementById("paragraph").innerHTML = text;
 }
 
 /* Event Listeners */
-button.addEventListener("click", rollD3);
+button.addEventListener("click", test);
