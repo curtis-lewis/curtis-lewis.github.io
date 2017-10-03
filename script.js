@@ -3,12 +3,11 @@
 /* Variable Declarations */
 
 // dinner variables
-var buttonDinner = document.getElementById("button_dinner");
+var buttonRandom = document.getElementById("button_random");
 var paragraphDinner = document.getElementById("paragraph_dinner");
 var dinnerCuisines = ["Italian", "Mexican", "Chinese", "Japanese", "Mongolian", "Indian", "American", "Greek", "Fast food"];
 
 // movie variables
-var buttonMovie = document.getElementById("button_movie");
 var paragraphMovie = document.getElementById("paragraph_movie");
 var movieGenres = ["Comedy", "Horror", "Drama", "Romance", "Documentary", "Family", "Feel-good", "Inspirational", "Action", "Sci-Fi", "Fantasy"];
 
@@ -18,9 +17,11 @@ function getDinner() {
 }
 
 function getMovie() {
-    paragraphMovie.innerHTML =movieGenres[Math.floor(Math.random() * movieGenres.length)];
+    paragraphMovie.innerHTML = movieGenres[Math.floor(Math.random() * movieGenres.length)];
 }
 
 /* Event Listeners */
-buttonDinner.addEventListener("click", getDinner);
-buttonMovie.addEventListener("click", getMovie);
+buttonRandom.addEventListener("click", function () {
+    getDinner();
+    getMovie();
+})
