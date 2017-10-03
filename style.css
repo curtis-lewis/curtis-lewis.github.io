@@ -1,9 +1,15 @@
 /* style.cs */
 
-@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Expanded');
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Expanded|Orbitron');
 
 body {
-    align-content: center;
+    background: #616161;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #9bc5c3, #616161);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #9bc5c3, #616161);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
 }
 
 button {
@@ -15,6 +21,12 @@ button {
     font-size: 16px;
     padding: 15px 32px;
     display: inline-block;
+    margin-top: 10px;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    padding-bottom: 10px;
 }
 
 .title {
@@ -26,4 +38,3 @@ button {
     font-family: 'Encode Sans Expanded', sans-serif;
     font-size: 24px;
 }
-
