@@ -1,2 +1,29 @@
 /* style.cs */
 
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Expanded');
+
+body {
+    align-content: center;
+}
+
+button {
+    text-align: center;
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px 32px;
+    display: inline-block;
+}
+
+.title {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-size: 18px;
+}
+
+.result {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-size: 24px;
+}
+
