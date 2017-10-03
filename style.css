@@ -1,4 +1,8 @@
-/* style.cs */
+/* **********
+ * style.cs *
+ ************/
+
+/* font imports */
 
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Expanded|Orbitron');
 
@@ -21,7 +25,7 @@ button {
     font-size: 16px;
     padding: 15px 32px;
     display: inline-block;
-    margin-top: 8em;
+    margin-top: 6em;
 }
 
 h1 {
