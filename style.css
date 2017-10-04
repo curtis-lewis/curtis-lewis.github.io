@@ -6,6 +6,8 @@
 
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Expanded|Orbitron');
 
+/* Tag -> Class -> ID */
+
 body {
     background: #616161;
     /* fallback for old browsers */

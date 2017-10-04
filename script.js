@@ -24,4 +24,4 @@ function getMovie() {
 buttonRandom.addEventListener("click", function () {
     getDinner();
     getMovie();
-})
+});
