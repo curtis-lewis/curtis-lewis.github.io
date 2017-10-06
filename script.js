@@ -1,6 +1,7 @@
 // script.js
 
 /* Variable Declarations */
+var count = 0;
 
 // dinner variables
 var buttonRandom = document.getElementById("button_random");
@@ -9,19 +10,34 @@ var dinnerCuisines = ["Italian", "Mexican", "Chinese", "Japanese", "Mongolian", 
 
 // movie variables
 var paragraphMovie = document.getElementById("paragraph_movie");
-var movieGenres = ["Comedy", "Horror", "Drama", "Romance", "Documentary", "Family", "Feel-good", "Inspirational", "Action", "Sci-Fi", "Fantasy"];
+var movieGenres = ["Comedy", "Horror", "Drama", "Romance", "Documentary", "Family", "Feel-good", "Inspirational", "Action", "Sci-Fi", "Fantasy", "Western"];
 
 /* Function Declarations */
 function getDinner() {
-    paragraphDinner.innerHTML = dinnerCuisines[Math.floor(Math.random() * dinnerCuisines.length)];
+    var dinnerResult = dinnerCuisines[Math.floor(Math.random() * dinnerCuisines.length)];
+    paragraphDinner.innerHTML = dinnerResult;
 }
 
 function getMovie() {
-    paragraphMovie.innerHTML = movieGenres[Math.floor(Math.random() * movieGenres.length)];
+    var movieResult =  movieGenres[Math.floor(Math.random() * movieGenres.length)];
+    paragraphMovie.innerHTML = movieResult;
+    if (movieResult == "Comedy") {
+        paragraphMovie.style.fontFamily="cursive";
+        console.log("it worked");
+    }
+}
+
+function resetFont() {
+    paragraphDinner.style.fontFamily="Encode Sans Expanded, sans-serif";
+    paragraphMovie.style.fontFamily="Encode Sans Expanded, sans-serif";   
 }
 
 /* Event Listeners */
 buttonRandom.addEventListener("click", function () {
+    if (count > 0) {
+        resetFont();
+    }
+    count++;
     getDinner();
     getMovie();
 });

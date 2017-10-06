@@ -9,32 +9,27 @@
 /* Tag -> Class -> ID */
 
 body {
-    background: #616161;
+    background: #232526;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #9bc5c3, #616161);
+    background: -webkit-linear-gradient(to right, #414345, #232526);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #9bc5c3, #616161);
+    background: linear-gradient(to right, #414345, #232526);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     text-align: center;
+    color: #C8C2BF;
 }
 
 button {
     text-align: center;
     background-color: #008CBA;
     border: none;
-    color: white;
+    color: #C8C2BF;
     text-decoration: none;
     font-size: 16px;
     padding: 15px 32px;
     display: inline-block;
     margin-top: 6em;
-    box-shadow: 0 9px #999;
-}
-
-button:active {
-    background-color: #008CBA;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+    font-family: 'Orbitron', sans-serif;
 }
 
 h1 {
