@@ -10,7 +10,7 @@ var dinnerCuisines = ["Italian", "Mexican", "Chinese", "Japanese", "Mongolian", 
 
 // movie variables
 var paragraphMovie = document.getElementById("paragraph_movie");
-var movieGenres = ["Comedy", "Horror", "Drama", "Romance", "Documentary", "Family", "Feel-good", "Inspirational", "Action", "Sci-Fi", "Fantasy", "Western"];
+var movieGenres = ["Comedy", "Horror", "Drama", "Romance", "Documentary", "Family", "Feel-good", "Inspirational", "Action", "Sci-Fi", "Fantasy", "Western", "Superhero", "Timepiece"];
 
 /* Function Declarations */
 function getDinner() {
