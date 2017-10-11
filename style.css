@@ -4,46 +4,20 @@
 
 /* font imports */
 
-@import url('https://fonts.googleapis.com/css?family=Anton|Audiowide|Bangers|Diplomata+SC|Encode+Sans+Expanded|Finger+Paint|Galindo|Metal+Mania|Metamorphous|Overpass+Mono|Pacifico|Sedgwick+Ave+Display|Shadows+Into+Light');
-
-
-/* Tag -> Class -> ID */
-
-body {
-    background: #232526;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #414345, #232526);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #414345, #232526);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    text-align: center;
-    color: #C8C2BF;
+.container_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-button {
-    text-align: center;
-    background-color: #008CBA;
-    border: none;
-    color: #C8C2BF;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 15px 32px;
-    display: inline-block;
-    margin-top: 6em;
-    font-family: 'Orbitron', sans-serif;
+#square_blue {
+    width: 100px;
+    height: 100px;
+    background: blue;
 }
 
-h1 {
-    font-family: 'Orbitron', sans-serif;
-    padding-bottom: 10px;
-}
-
-.title {
-    font-family: 'Encode Sans Expanded', sans-serif;
-    font-size: 18px;
-}
-
-.result {
-    font-family: 'Encode Sans Expanded', sans-serif;
-    font-size: 24px;
+#square_red {
+    width: 100px;
+    height: 100px;
+    background: red;
 }
