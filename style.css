@@ -4,20 +4,41 @@
 
 /* font imports */
 
+/* ------------ */
+
 .container_top {
+    display: flex;
+    justify-content: center;
+}
+
+/*
+.container_bottom {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
+*/
 
-#square_blue {
-    width: 100px;
-    height: 100px;
-    background: blue;
+#title {
+    display: flex;
+    justify-content: center;
 }
 
-#square_red {
-    width: 100px;
-    height: 100px;
-    background: red;
+#image_dinner_top {}
+
+#image_movie_top {
+    max-width: auto;
+    height: auto;
 }
+
+/*
+#image_dinner_bottom {
+    width: .5em;
+    height: .5em;
+}
+
+#image_movie_bottom {
+    width: .5em;
+    height: .5em;
+}
+*/
