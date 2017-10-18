@@ -11,17 +11,17 @@
 }
 
 #image_dinner_top {
-    width: 25em;
+    width: 20em;
     height: auto;
-    position: fixed;
-    left: 40%;
+    position: absolute;
+    left: 10%;
     z-index: -1;
 }
 
 #image_movie_top {
-    width: 16em;
+    width: 10em;
     height: auto;
-    position: fixed;
-    top: 25%;
-    left: 50%;
+    position: absolute;
+    top: 30%;
+    left: 48%;
 }
