@@ -6,12 +6,22 @@
 
 /* ------------ */
 
-#image_movie_top {
-    width: 18.5em;
-    height: auto;
+#title {
+    text-align: center;
 }
 
 #image_dinner_top {
     width: 25em;
     height: auto;
+    position: fixed;
+    left: 40%;
+    z-index: -1;
+}
+
+#image_movie_top {
+    width: 16em;
+    height: auto;
+    position: fixed;
+    top: 25%;
+    left: 50%;
 }
