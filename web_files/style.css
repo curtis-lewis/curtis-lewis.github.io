@@ -4,10 +4,22 @@
 
 /* font imports */
 
+@import url('https://fonts.googleapis.com/css?family=Padauk');
 /* ------------ */
+
+body {
+    background: #8E0E00;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1F1C18, #8E0E00);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
 #title {
     text-align: center;
+    font-family: 'Padauk', sans-serif;
+    color: white;
 }
 
 #image_dinner_top {
@@ -28,6 +40,14 @@
 
 #button_refresh {
     position: absolute;
-    bottom: 15%;
-    left: 42%;
+    bottom: 18%;
+    left: 36%;
+    font-family: 'Padauk', sans-serif;
+    background-color: #D04334;
+    text-align: center;
+    font-size: 20px;
+    border: none;
+    text-decoration: none;
+    padding: 15px 30px;
+    color: white;
 }

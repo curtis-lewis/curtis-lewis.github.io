@@ -1,4 +1,4 @@
-// script.js
+/* --- script.js --- */
 
 /* HTML Objects */
 var buttonRefresh = document.getElementById("button_refresh");
