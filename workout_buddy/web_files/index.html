@@ -6,8 +6,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <h1>Truth or Dare</h1>
+<body onload="load()">
+    <h1>Workout Buddy</h1>
+    <div id="display">
+        <p id="display_timer">TIMER</p>
+        <p id="display_reps">REPS</p>
+        <p id="display_sets">SETS</p>
+    </div>
+    <div id="buttons">
+        <button id="button_rest_increment" onclick="incrementRest()">+</button>
+        <button id="button_rest_decrement" onclick="decrementRest()">-</button>
+        <br>
+        <button id="button_rest">REST (time)</button>
+        <br/>
+        <br/>
+        <button id="button_rep_increment" onclick="incrementReps()">REP +1</button>
+        <br/>
+        <br/>
+        <button id="button_set_increment" onclick="incrementSets()">SET +1</button>
+        <br/>
+        <br/>
+        <button id="button_reset" onclick="reset()">RESET</button>
+    </div>
 </body>
 <script src="script.js"></script>
 
