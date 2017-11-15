@@ -109,6 +109,7 @@ function countdown() {
             restCount = 30;
             updateTimer();
             count = 0;
+            return;
         }
     }, 1000);
 }
