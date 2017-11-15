@@ -5,6 +5,7 @@ var restCount = 30;
 var restStore = 0;
 var repsCount = 0;
 var setsCount = 0;
+var endEarly = false;
 
 /* HTML Objects */
 
@@ -47,8 +48,13 @@ function updateSets() {
 
 // Increments Rest by 15
 function incrementRest() {
-    restCount = restCount + 15;
-    updateTimer();
+    if (restCount == 120) {
+        restCount = 120;
+        updateTimer();
+    } else {
+        restCount = restCount + 15;
+        updateTimer();
+    }
 }
 
 // Decrements Rest by 15
@@ -78,18 +84,31 @@ function incrementSets() {
 
 // Resets workout data
 function reset() {
+    restCount = 30;
     repsCount = 0;
     setsCount = 0;
     updateReps();
     updateSets();
+    updateTimer();
 }
 
+// Begins timer countdown
 function countdown() {
+    var count = 0;
+    count = count + 1;
+    if (count >= 2)
+        endEarly = true;
     var timeLeft = restCount;
+    buttonRest.innerHTML = "PAUSE";
     var downloadTimer = setInterval(function () {
         timeLeft--;
         displayTimer.innerHTML = timeLeft;
-        if (timeLeft <= 0)
+        if (timeLeft <= 0 || endEarly == true) {
             clearInterval(downloadTimer);
+            buttonRest.innerHTML = "REST";
+            restCount = 30;
+            updateTimer();
+            count = 0;
+        }
     }, 1000);
 }
