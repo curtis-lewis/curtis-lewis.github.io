@@ -2,6 +2,7 @@
 
 /* Variables */
 var restCount = 30;
+var restStore = 0;
 var repsCount = 0;
 var setsCount = 0;
 
@@ -25,8 +26,8 @@ var buttonReset = document.getElementById("button_reset");
 // Called when page is first loaded
 function load() {
     displayTimer.innerHTML = restCount;
-    displayReps.innerHTML = repsCount;
-    displaySets.innerHTML = setsCount;
+    displayReps.innerHTML = "Reps: " + repsCount;
+    displaySets.innerHTML = "Sets: " + setsCount;
 }
 
 // Updates displayTimer
@@ -36,14 +37,13 @@ function updateTimer() {
 
 // Updates displayReps
 function updateReps() {
-    displayReps.innerHTML = repsCount;
+    displayReps.innerHTML = "Reps: " + repsCount;
 }
 
 // Updates displaySets
 function updateSets() {
-    displaySets.innerHTML = setsCount;
+    displaySets.innerHTML = "Sets: " + setsCount;
 }
-
 
 // Increments Rest by 15
 function incrementRest() {
@@ -71,6 +71,8 @@ function incrementReps() {
 // Increments sets by 1
 function incrementSets() {
     setsCount = setsCount + 1;
+    repsCount = 0;
+    updateReps();
     updateSets();
 }
 
@@ -80,4 +82,14 @@ function reset() {
     setsCount = 0;
     updateReps();
     updateSets();
+}
+
+function countdown() {
+    var timeLeft = restCount;
+    var downloadTimer = setInterval(function () {
+        timeLeft--;
+        displayTimer.innerHTML = timeLeft;
+        if (timeLeft <= 0)
+            clearInterval(downloadTimer);
+    }, 1000);
 }
