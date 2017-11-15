@@ -53,12 +53,12 @@ function incrementRest() {
 
 // Decrements Rest by 15
 function decrementRest() {
-    if (restCount > 0) {
-        restCount = restCount - 15;
+    if (restCount < 30) {
+        restCount = 15;
         updateTimer();
     } else {
-        restCount = 0;
-        displayTimer.innerHTML = 0;
+        restCount = restCount - 15;
+        updateTimer();
     }
 }
 
